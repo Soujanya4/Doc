@@ -1,0 +1,61 @@
+joins
+use puropale;
+show tables;
+select bags.brand,bags.price from bags inner join bikes on bags.price=bikes.price;
+select bmw.price,bmw.name from bmw left join ferrari on bmw.price=ferrari.price; 
+select flowers.colors,flowers.name from flowers right join fruits on flowers.price=fruits.price;
+select kawasaki.colors,kawasaki.price from kawasaki cross join mercedes on kawasaki.price=mercedes.price;
+select mobiles.name,mobiles.price from mobiles where  mobiles.price>10000;
+select*from re left join scooters on re.price=scooters.price UNION select*from re right join scooters on re.price=scooters.price;
+Git(global information tracker):
+It defines as VCS- version control system
+Git is mainly responsible for collaboration. 
+VCS- version control system :
+the system which control the version mainly used to  maintain multiple versions of the same file/application.
+v1...v2...v3....vn--History of versions can be stored.
+VCS: version control is a system that records changes to a file (or) set of files over time so that you can recall specific version later,
+Adavantages of VCS:
+1.v1..v2..v3(flop)--rollback pervious version v2.
+Git:VCS
+functionalities of VCS:
+1.allows multiple developers to work simultaneously.
+ex: SBI.....loans: Gold loan,Vechicle loan,home loan, personal loan,car loan, banking.
+2.Doesn't allow overwriting
+3.VCS maintains history of every version.
+Git classified into two types:
+CVCS:Centralized version control system--SVN
+DVCS:Decntralized or Distributed Version control system
+Tasks:
+Both version control systems (VCS) and collaboration tools have their respective functionalities in a team's project workflow, however, they do not replace each other.
+Version Control Systems (VCS):
+Purpose: A VCS organizes documentation or code in a particular sequence and keeps track of changes made over time. It enables multiple developers to work on different aspects of a project simultaneously without overwriting each other's changes.
+Examples: Subversion (SVN), Mercurial, Git.
+Features:
+
+Tracks history of changes.
+Allows branching and merging.
+Facilitates project version rollback.
+Facilitates multiple developers working on the same project without conflicts.
+Typically integrates with remote repositories (like GitHub, GitLab, or Bitbucket).
+
+Collaboration Tools:
+Purpose: Unlike VCS systems that focus mainly on enabling two users to work concurrently on the same document, collaboration tools focus on communication or cooperation among different teams. These tools generally incorporate messaging, task and file sharing, and even document editing.
+Examples: Google Docs, Slack, Microsoft Teams, Asana, Trello.
+Features:
+Provides a virtual space that enables users to discuss various topics and brainstorm.
+Allows assignment of tasks within a project or tracking its development.
+Includes the ability to edit documents in real-time or share files.
+Facilitates video calls, chats, or other forms of discussions.
+
+Comparison:
+
+Scope: The VCS is restricted to code management, whereas collaboration tools focus on more than one feature.
+Git, GitHub, and GitLab are all tools you can use for software development and keeping track of different versions of your code, but they each have their own focus.
+Git:
+Git is a system that lets developers manage their code changes and work together. It helps track the history of a project, save various versions of code, and roll back to previous ones when needed. You can make changes locally on your computer, and later sync them with shared repositories.
+GitHub:
+GitHub is a platform where you can host and share your code projects using Git. It comes with extra features like tools for project management and collaboration, including things like issues, pull requests, and discussions. Many developers use GitHub for open-source projects since it allows for public or private sharing and teamwork.
+GitLab:
+GitLab also hosts Git repositories online, similar to GitHub, but it stands out with its advanced features for automating software development processes, such as continuous integration and deployment. It has built-in tools for managing source code, projects, and CI/CD pipelines, letting developers handle all aspects of their projects from one place. You can either self-host GitLab or use it as a cloud service, giving teams the choice of how they want to manage their code.
+In short:
+Git helps with version control. GitHub and GitLab build on Git by providing extra features for collaboration and automation; GitHub is especially popular in the open-source world, while GitLab is often chosen for its enterprise CI/CD support.

@@ -1,0 +1,137 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\b\f0\fs72\lang9 commands\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs40 commands: \b0\fs32\par
+2types of commandsin mysql:\par
+1.DDL: Data definition Language\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Create\fs22\par
+{\pntext\f0 2.\tab}\fs32 Alter\fs22\par
+{\pntext\f0 3.\tab}\fs32 Drop\fs22\par
+{\pntext\f0 4.\tab}\fs32 Truncate\fs22\par
+{\pntext\f0 5.\tab}\fs32 Remane\fs22\par
+{\pntext\f0 6.\tab}\fs32 Comment\fs22\par
+
+\pard\sa200\sl276\slmult1\fs32 2.DML: Data Manipulation Language\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Insert\fs22\par
+{\pntext\f0 2.\tab}\fs28 Update/Modify\fs22\par
+{\pntext\f0 3.\tab}\fs28 Delete\fs22\par
+
+\pard\sa200\sl276\slmult1\fs40 Select statement: \fs32 it is used to select the data.\par
+syntax: select column1,column2,.....;\par
+Create table  \par
+\fs40 Update: \fs32 modify the already exisiting records in a table.\par
+Syntax: update table_name set column1=value1,column2=value2,...;\par
+\fs40 Where: \fs32 Filter the records \par
+Syntax: select column1 from table_name where;\par
+\fs36 AND,OR,NOT\fs32\par
+select*from table_name where  salary  between 50000 and 250000;\par
+select*from table_name where salary <50000 or salary>250000;\par
+select*from table_name where not salary<250000;\par
+\fs40 Orderby: \fs32 is used to sort the result-set in ascending or descending order.\par
+Syntax: select column1,column2,...\par
+From table_name\par
+Order by column1, column2,....ASC|DESC;\par
+\fs40 MIN(): \fs32 function returns the smallest value of the selected column.\par
+\fs40 MAX(): \fs32 funtion returns the largest value of the selected column.\par
+MIN() Syntax:\par
+select min(column_name)\par
+from table_name\par
+where condition;\par
+MAX()Syntax:\par
+select max(column_name)\par
+from table_name\par
+where condition;\par
+\fs40 Sum\fs32 : the sum() function returns the total sum of a numeric column.\par
+SUM()Syntax:\par
+select sum(column_name)\par
+from table_name\par
+where condition;\par
+\fs40 Count:\fs32 the count() function returns the number of rows that matches a specified criterion.\par
+COUNT()Syntax: \par
+select count(column_name)\par
+from table_name\par
+where condition;\par
+\fs40 AVG: \fs32 the function AVG() returns the average value of a numeric collumn.\par
+AVG()Syntax:\par
+select avg(column_name)\par
+from table_name \par
+where condition;\par
+\b\fs72 Tasks Of the Day\b0\fs32\par
+\fs28 1.create database name- puropale\par
+mysql> create database name_puropale;\par
+Query OK, 1 row affected (0.01 sec).\par
+2.create 15 tables with 30 records \par
+\fs22 CREATE TABLE t1 (name varchar(100) ,id int ,age int ,city varchar(10));\par
+INSERT INTO t1(name, id,age,city)values('Jhon',1325,25,'CityA'),('Mary',1326,30,'CtiyB'),('Tom',1327,35,'CityC'),('Lucy',1328,40,'CityD'),('James',1329,22,'CityE'),('Emma',1330,28,'CityF'),('Liam',1331,32,'CityG'),('Sophia',1332,29,'CityH'),('Manson',1333,29,'CityI'),('Isabella',1334,34,'CityJ'),('Ethan',1335,26,'CityK'),('Olivia',1336,31,'CityL'),('Ava',1337,23,'CityM'),('William',1355,36,'CityN'),('Benjamin',1338,33,'CityO'),('Charlotte',1339,30,'CityP'),('Amelia',1340,24,'CityQ'),('Jack',1341,38,'CityR'),('Harper',1342,29,'CityS'),('Daniel',1343,27,'CityT'),('Matthew',1344,31,'CityU'),('Zoe',1345,25,'CityV'),('Michael',1346,34,'CityW'),('Henry',1347,28,'Cityx'),('Lily',1348,32,'CityY'),('Alexander',1349,26,'CityZ'),('Grace',1350,27,'CityA'),('Ella',1351,30,'CityB'),('Samuel',1352,31,'CityC'),('Alice',1353,28,'CityD');\par
+CREATE TABLE samsung  (name varchar(300),price int);\par
+INSERT INTO samsung(name,price) values ('Samsung Galaxy S25 Ultra',124990),('Samsung Galaxy S25',74990),('Samsung Galaxy S24 Ultra',109999),('Samsung Galaxy S24 FE',59999),('Samsung Galaxy S23 Ultra 5G',124999),('Samsung Galaxy S23 FE',59999),('Samsung Galaxy S22 Ultra',109999),('Samsung Galaxy S21 FE',49999),('Samsung Galaxy A55 5G',33999),('Samsung Galaxy A56 5G', 43990),('Samsung Galaxy A75 5G', 44999),('Samsung Galaxy A74 5G',42999),('Samsung Galaxy A35 5G',25999),('Samsung Galaxy A34',20799),('Samsung Galaxy A25 5G',26999),('Samsung Galaxy A16 5G',16999),('Samsung Galaxy A15 5G',19499),('Samsung Galaxy A06', 9999),('Samsung Galaxy A05',9999),('Samsung Galaxy A16 6GB RAM',15499),('Samsung Galaxy M35 5G',16999),('Samsung Galaxy M16 5G',16990),('Samsung Galaxy M15 5G Prime Edition',19499),('Samsung Galaxy M14 5G',14999),('Samsung Galaxy M13', 11999),('Samsung Galaxy M12',10999),('Samsung Galaxy M11',10999),('Samsung Galaxy M01', 8999),('Samsung Galaxy M01 Core', 5999);\par
+\par
+CREATE TABLE mobiles(name varchar(200),price int, launch_date DATE);\par
+INSERT INTO mobiles(name, price,launch_date) values ('iPhone 15 Pro', 134900, '2023-09-12'),('iPhone 14', 74900, '2022-09-07'),('OnePlus 11', 54999, '2023-02-07'),('OnePlus Nord 3', 30999, '2023-07-05'),('Xiaomi 13 Pro', 74999, '2023-02-26'),('Xiaomi Redmi Note 12 Pro+', 24999, '2023-10-05'),('Realme GT 2 Pro', 35999, '2022-01-04'),('Realme 11 Pro+', 23999, '2023-05-15'),('Oppo Find X6 Pro', 74999, '2023-03-21'),('Oppo Reno 10 Pro+', 34999, '2023-06-12'),('Vivo X90 Pro+', 82999, '2023-03-03'),('Vivo Y100', 24999, '2023-02-16'),('Motorola Edge 40', 29999, '2023-05-20'),('Motorola Moto G73', 18999, '2023-03-10'),('Asus ROG Phone 7', 79999, '2023-04-13'),('Asus Zenfone 10', 58999, '2023-06-29'),('Google Pixel 8 Pro', 99999, '2023-10-04'),('Google Pixel 7a', 43999, '2023-05-10'),('Nokia X30 5G', 45999, '2022-09-01'),('Nokia G60 5G', 25999, '2022-10-01'),('Infinix Zero Ultra', 29999, '2022-10-05'),('Infinix Note 12 Turbo', 16999, '2023-02-12'),('Lava Agni 2 5G', 19999, '2023-04-28'),('Lava Blaze 5G', 13999, '2023-03-05'),('Tecno Phantom X2', 38999, '2023-01-02'),('Tecno Spark 10 Pro', 14999, '2023-03-23'),('Micromax IN Note 2', 13999, '2022-03-15'),('Karbonn Titanium Ultra 10', 7999, '2022-08-17'),('Itel S23', 8499, '2023-11-25'),('ZTE Nubia Red Magic 8 Pro', 59999, '2023-02-19');\par
+\par
+CREATE TABLE kawasaki  (name varchar(300),price int,colors varchar(300));\par
+INSERT INTO kawasaki(name,price,colors) VALUES ('Kawasaki Ninja ZX-10R', 1599000, 'Lime Green, Ebony'),('Kawasaki Ninja 1000SX', 1150000, 'Lime Green, Metallic Diablo Black'),('Kawasaki Z900', 879000, 'Metallic Spark Black, Candy Lime Green'),('Kawasaki Z650', 659000, 'Lime Green, Metallic Spark Black'),('Kawasaki Vulcan S', 649000, 'Lime Green, Metallic Flat Spark Black'),('Kawasaki Ninja ZX-6R', 1049000, 'Lime Green, Ebony'),('Kawasaki Ninja 400', 499000.00, 'Lime Green, Metallic Spark Black'),('Kawasaki Ninja H2', 3400000, 'Lime Green, Mirror Coated Matte Spark Black'),('Kawasaki Ninja H2R', 7500000, 'Lime Green, Mirror Coated Matte Spark Black'),('Kawasaki Z1000', 1049000, 'Metallic Spark Black, Pearl Stardust White'),('Kawasaki Z125 Pro', 260000, 'Lime Green, Ebony'),('Kawasaki Versys 1000', 1150000, 'Lime Green, Metallic Flat Spark Black'),('Kawasaki Versys 650', 719000, 'Lime Green, Metallic Flat Spark Black'),('Kawasaki KLX 110R', 490000, 'Lime Green, Black'),('Kawasaki KLX 140R', 680000, 'Lime Green, Black'),('Kawasaki KX 100', 735000, 'Lime Green'),('Kawasaki KX 250', 800000, 'Lime Green'),('Kawasaki KX 450', 850000, 'Lime Green'),('Kawasaki W175', 199000, 'Ebony, Candy Persimmon Red'),('Kawasaki W800', 669000, 'Metallic Moondust Grey, Ebony'),('Kawasaki Ninja 650', 629000, 'Lime Green, Metallic Spark Black'),('Kawasaki Z400', 499000, 'Lime Green, Metallic Flat Spark Black'),('Kawasaki Ninja 300', 299000, 'Lime Green, Metallic Spark Black'),('Kawasaki KLR 650', 699000, 'Lime Green, Black'),('Kawasaki Z250', 299000, 'Lime Green, Metallic Spark Black'),('Kawasaki ER-6n', 650000, 'Lime Green, Metallic Spark Black'),('Kawasaki Ninja 250', 249000, 'Lime Green, Ebony'),('Kawasaki Ninja ZX-10RR', 1699000, 'Lime Green, Ebony'),('Kawasaki Z800', 859000, 'Lime Green, Metallic Flat Spark Black'),('Kawasaki Z650RS', 739000.00, 'Metallic Moondust Grey, Ebony');\par
+CREATE TABLE re(name varchar(400), price decimal(10,2),launch_date DATE);\par
+INSERT INTO re(name,price,launch_date) values ('Royal Enfield Classic 350', 204999.00, '2021-09-01'),('Royal Enfield Meteor 350', 214999.00, '2020-11-06'),('Royal Enfield Bullet 350', 184999.00, '2022-01-01'),('Royal Enfield Himalayan', 219999.00, '2016-05-20'),('Royal Enfield Interceptor 650', 349000.00, '2018-11-14'),('Royal Enfield Continental GT 650', 359000.00, '2018-11-14'),('Royal Enfield Super Meteor 650', 349999.00, '2023-01-19'),('Royal Enfield Thunderbird X', 174999.00, '2018-02-07'),('Royal Enfield Classic 500', 211000.00, '2009-01-01'),('Royal Enfield Bullet 500', 204000.00, '2015-03-01'),('Royal Enfield Scram 411', 210000.00, '2022-03-15'),('Royal Enfield Hunter 350', 159999.00, '2022-08-01'),('Royal Enfield Electra 350', 189999.00, '2019-03-15'),('Royal Enfield Meteor 350 Stellar', 224999.00, '2020-11-06'),('Royal Enfield Classic 350 Signals', 214999.00, '2021-06-01'),('Royal Enfield Classic 350 Redditch', 199999.00, '2021-05-01'),('Royal Enfield Himalayan Scram 411', 209999.00, '2022-02-18'),('Royal Enfield Interceptor 650 Mark II', 359999.00, '2020-01-01'),('Royal Enfield Continental GT 650 Chrome', 379999.00, '2020-01-01'),('Royal Enfield Thunderbird X 500', 195000.00, '2018-02-07'),('Royal Enfield Himalayan BS6', 209999.00, '2020-01-01'),('Royal Enfield Meteor 350 Fireball', 199999.00, '2020-11-06'),('Royal Enfield Super Meteor 650 Tourer', 359999.00, '2023-01-19'),('Royal Enfield Classic 350 Dark', 214999.00, '2021-09-01'),('Royal Enfield Bullet 350X', 179999.00, '2020-12-15'),('Royal Enfield Interceptor 650 BS6', 349000.00, '2020-01-01'),('Royal Enfield Scram 411 Adventure', 224999.00, '2022-04-15'),('Royal Enfield Meteor 350 Supernova', 234999.00, '2020-11-06'),('Royal Enfield Classic 350 Stealth Black', 219999.00, '2021-08-01'),('Royal Enfield Thunderbird 500X', 195000.00, '2018-02-07'),('Royal Enfield Continental GT 650 British Racing Green', 379999.00, '2020-01-01');\par
+CREATE TABLE bikes(name varchar (200), price decimal(10,2)); \par
+INSERT INTO bikes(name,price)values  ('Honda CB350', 199999.00),('Yamaha R15 V4', 179900.00),('KTM Duke 390', 299900.00),('Suzuki Gixxer SF 250', 199900.00),('Bajaj Pulsar 200 NS', 119999.00),('TVS Apache RTR 160 4V', 119000.00),('Yamaha FZ-X', 116800.00),('Honda CBR 250R', 179900.00),('Bajaj Dominar 400', 214000.00),('KTM RC 200', 205000.00),('Harley Davidson Iron 883', 749000.00),('Honda CB Hornet 160R', 108000.00),('Suzuki V-Strom 650', 759000.00),('BMW G 310 R', 299000.00),('Mahindra Mojo', 189000.00),('Benelli TNT 600i', 659000.00),('Yamaha MT-15', 170000.00),('Honda CRF1100L Africa Twin', 1549000.00),('KTM Duke 250', 239000.00),('Bajaj Avenger Cruise 220', 132000.00),('Suzuki Intruder 150', 122000.00),('Triumph Tiger 900', 1399000.00),('Harley Davidson Street 750', 499000.00),('Yamaha FZ 25', 134000.00),('Bajaj Pulsar NS 160', 108000.00),('BMW R 1250 GS', 2040000.00),('TVS Apache RR 310', 250000.00),('Suzuki Hayabusa', 1699000.00),('Ducati Scrambler 800', 850000.00),('Ducati Panigale V2', 1799000.00);\par
+CREATE TABLE scooters(name varchar(100),price int);\par
+INSERT INTO scooters(name,price) values ('Honda Activa 6G', 74600.00),('TVS Jupiter', 73000),('Suzuki Access 125', 75500),('Honda Dio', 68400),('Bajaj Chetak Electric', 139900),('Ather 450X', 149900),('TVS Ntorq 125', 78300),('Hero Maestro Edge 110', 72500),('Hero Pleasure Plus 110', 62000),('Yamaha Fascino 125', 75200),('Okinawa Praise Pro', 79900),('Ampere Magnus Pro', 74900),('Simple One', 109999),('Honda Activa 125', 78000),('Suzuki Burgman Street 125', 92400),('TVS Scooty Zest 110', 62500),('Bajaj Avenger Street 160', 130000),('Hero Electric Optima', 53000),('Okinawa Ridge Plus', 79999),('Benling Aura', 84999),('Yamaha Ray ZR 125', 78500),('Suzuki Let\rquote s', 52000),('Honda SH 125i', 116000),('TVS iQube Electric', 120000),('Hero Electric Photon', 74500),('Greta G2', 72500),('Revolt RV400', 99999),('Mahindra Gusto 125', 67500),('Vespa SXL 125', 115000),('Piaggio Aprilia SR 125', 88000),('Vespa VXL 125', 116500.00);\par
+create table fruits(name varchar(200),price int,colors varchar(200));\par
+ insert into fruits(name,price,colors) values ('Apple', 150, 'Red, Green, Yellow'),('Banana', 50, 'Yellow'),('Mango', 100, 'Yellow, Green'),('Orange', 80, 'Orange'),('Grapes', 120, 'Green, Purple'),('Pineapple', 90, 'Yellow, Green'),('Papaya', 60, 'Orange, Green'),('Watermelon', 40, 'Green, Red'),('Guava', 60, 'Green, Yellow'),('Lemon', 30, 'Yellow, Green'),('Pomegranate', 120, 'Red'),('Peach', 120, 'Pink, Yellow'),('Plum', 100, 'Purple, Red, Yellow'),('Strawberry', 200, 'Red'),('Blueberry', 500, 'Blue, Purple'),('Kiwi', 250, 'Brown, Green'),('Lychee', 150, 'Red, Pink'),('Cherries', 300, 'Red'),('Apricot', 120, 'Yellow, Orange'),('Coconut', 50, 'Brown, Green'),('Avocado', 250, 'Green, Black'),('Jackfruit', 60, 'Green, Yellow'),('Dragon Fruit', 200, 'Pink, White'),('Cantaloupe', 80, 'Green, Orange'),('Carambola (Starfruit)', 100, 'Yellow, Green'),('Figs', 200, 'Purple, Green'),('Tangerine', 120, 'Orange'),('Amla', 40, 'Green'),('Custard Apple', 100, 'Green, Yellow'),('Mulberry', 150, 'Red, Purple');\par
+create table flowers (name varchar(200),price decimal(10,2),colors varchar(200),season varchar(300));\par
+insert into flowers(name, price,colors,season) values('Rose', 50.00, 'Red, Pink, White, Yellow', 'Spring, Summer'),('Tulip', 150.00, 'Red, Yellow, Pink, Purple', 'Spring'),('Lily', 100.00, 'White, Pink, Yellow, Orange', 'Summer'),('Orchid', 200.00, 'Purple, White, Pink, Yellow', 'Year-round'),('Sunflower', 80.00, 'Yellow, Orange', 'Summer, Fall'),('Chrysanthemum', 90.00, 'Red, Yellow, White, Pink', 'Fall, Winter'),('Daffodil', 120.00, 'Yellow, White', 'Spring'),('Marigold', 40.00, 'Orange, Yellow', 'Summer, Fall'),('Lavender', 150.00, 'Purple, Blue', 'Summer'),('Jasmine', 70.00, 'White, Yellow', 'Spring, Summer'),('Tulip', 130.00, 'Yellow, Red, Pink, Purple', 'Spring'),('Poppy', 50.00, 'Red, White, Pink, Yellow', 'Spring, Summer'),('Gardenia', 200.00, 'White, Cream', 'Spring, Summer'),('Camellia', 250.00, 'Red, Pink, White', 'Winter, Spring'),('Zinnia', 60.00, 'Red, Pink, Yellow, Orange', 'Summer, Fall'),('Violet', 50.00, 'Purple, White, Blue', 'Spring'),('Hibiscus', 70.00, 'Red, Yellow, White', 'Year-round'),('Begonia', 80.00, 'Red, Pink, White', 'Spring, Summer'),('Gerbera', 90.00, 'Red, Pink, Yellow, White', 'Spring, Summer'),('Peony', 180.00, 'Pink, Red, White, Yellow', 'Spring'),('Geranium', 70.00, 'Red, Pink, White, Purple', 'Spring, Summer'),('Magnolia', 120.00, 'White, Pink', 'Spring, Summer'),('Dahlia', 160.00, 'Red, Pink, White, Yellow', 'Summer, Fall'),('Freesia', 100.00, 'White, Yellow, Pink, Purple', 'Spring'),('Carnation', 60.00, 'Red, Pink, White, Yellow', 'Year-round'),('Crocus', 80.00, 'Purple, Yellow, White', 'Spring'),('Lilac', 150.00, 'Purple, White', 'Spring'),('Anemone', 120.00, 'White, Red, Pink', 'Spring, Summer'),('Bamboo Orchid', 300.00, 'Purple, White', 'Year-round'),('Lotus', 250.00, 'Pink, White', 'Summer, Fall');\par
+create table bags(name varchar(200),brand varchar(100),price decimal(10,2));\par
+insert into bags(name,brand,price) values('Nike Sports Bag', 'Nike', 3500.00),('Adidas Gym Bag', 'Adidas', 3000.00),('Puma Backpack', 'Puma', 2800.00),('Fossil Leather Tote', 'Fossil', 9000.00),('Louis Vuitton Speedy', 'Louis Vuitton', 60000.00),('Gucci GG Marmont', 'Gucci', 55000.00),('Herschel Little America', 'Herschel', 6000.00),('Samsonite Laptop Backpack', 'Samsonite', 5500.00),('Kipling Art M Bag', 'Kipling', 4000.00),('Timbuk2 Messenger Bag', 'Timbuk2', 6500.00),('Michael Kors Jet Set', 'Michael Kors', 12000.00),('Chanel Classic Flap Bag', 'Chanel', 250000.00),('Coach Signature Bag', 'Coach', 25000.00),('Kate Spade New York', 'Kate Spade', 16000.00),('Tommy Hilfiger Backpack', 'Tommy Hilfiger', 5000.00),('Under Armour Tote', 'Under Armour', 2200.00),('Eastpak Padded Pak\rquote r', 'Eastpak', 3500.00),('Calvin Klein Crossbody', 'Calvin Klein', 8000.00),('Targus Laptop Bag', 'Targus', 4000.00),('The North Face Recon', 'The North Face', 6500.00),('Armani Exchange Satchel', 'Armani Exchange', 12000.00),('Prada Nylon Backpack', 'Prada', 70000.00),('BOSS Leather Briefcase', 'BOSS', 18000.00),('Vera Bradley Weekender', 'Vera Bradley', 9000.00),('Marc Jacobs Snapshot', 'Marc Jacobs', 25000.00),('H&M Canvas Tote', 'H&M', 1200.00),('Sling Bag by Fossil', 'Fossil', 3500.00),('Patagonia Arbor Backpack', 'Patagonia', 8000.00),('Chloe Nile Bracelet Bag', 'Chloe', 60000.00);\par
+create table perfurms (name varchar(300),brand varchar(225),price decimal(10,2),fragrance_type varchar(300));\par
+insert into perfurms (name,brand,price,fragrance_type) values ('Chanel No. 5', 'Chanel', 10000.00, 'Floral'),('Dior Sauvage', 'Dior', 8500.00, 'Woody, Spicy'),('Tom Ford Black Orchid', 'Tom Ford', 13000.00, 'Oriental, Floral'),('Gucci Bloom', 'Gucci', 9500.00, 'Floral'),('Creed Aventus', 'Creed', 25000.00, 'Fruity, Woody'),('Yves Saint Laurent Black Opium', 'Yves Saint Laurent', 8000.00, 'Coffee, Vanilla'),('Viktor & Rolf Flowerbomb', 'Viktor & Rolf', 12000.00, 'Floral, Sweet'),('Calvin Klein Euphoria', 'Calvin Klein', 5500.00, 'Floral, Fruity'),('Jean Paul Gaultier Le Male', 'Jean Paul Gaultier', 7000.00, 'Woody, Oriental'),('Chloe Eau de Parfum', 'Chloe', 9500.00, 'Floral, Powdery'),('Givenchy L\rquote Interdit', 'Givenchy', 10500.00, 'Floral, Woody'),('Armani Code', 'Giorgio Armani', 8000.00, 'Oriental, Spicy'),('Herm\'e8s Terre d\rquote Herm\'e8s', 'Herm\'e8s', 12000.00, 'Woody, Earthy'),('Bleu de Chanel', 'Chanel', 10500.00, 'Citrus, Woody'),('Dolce & Gabbana Light Blue', 'Dolce & Gabbana', 6000.00, 'Citrus, Floral'),('Tom Ford Oud Wood', 'Tom Ford', 15000.00, 'Woody, Spicy'),('Baccarat Rouge 540', 'Maison Francis Kurkdjian', 25000.00, 'Amber, Floral'),('Jo Malone London Peony & Blush Suede', 'Jo Malone', 9500.00, 'Floral'),('Marc Jacobs Daisy', 'Marc Jacobs', 5500.00, 'Floral, Fruity'),('Paco Rabanne 1 Million', 'Paco Rabanne', 7000.00, 'Spicy, Woody'),('Acqua di Parma Colonia', 'Acqua di Parma', 15000.00, 'Citrus, Woody'),('Tom Ford Oud Wood Intense', 'Tom Ford', 17500.00, 'Woody, Spicy'),('Creed Green Irish Tweed', 'Creed', 22000.00, 'Woody, Floral'),('Diptyque Philosykos', 'Diptyque', 11000.00, 'Woody, Green'),('Maison Margiela Replica Jazz Club', 'Maison Margiela', 12000.00, 'Woody, Sweet'),('Byredo Gypsy Water', 'Byredo', 13000.00, 'Woody, Citrus'),('Estee Lauder Beautiful', 'Estee Lauder', 9500.00, 'Floral'),('Prada Candy', 'Prada', 7000.00, 'Sweet, Caramel'),('Louis Vuitton Ombre Nomade', 'Louis Vuitton', 27000.00, 'Woody, Oud'),('Hugo Boss Bottled', 'Hugo Boss', 7000.00, 'Woody, Spicy'),('Tom Ford Velvet Orchid', 'Tom Ford', 14000.00, 'Floral, Oriental');\par
+create table BMW (name varchar(100),model_year int, price decimal(10,2));\par
+ insert into BMW(name,model_year,price) values ('BMW X5', 2023, 9500000.00),('BMW 3 Series', 2023, 5500000.00),('BMW 5 Series', 2023, 7500000.00),('BMW X7', 2023, 12000000.00),('BMW Z4', 2023, 9000000.00),('BMW M4', 2023, 11000000.00),('BMW i4', 2023, 6500000.00),('BMW M3', 2023, 10500000.00),('BMW X6', 2023, 9500000.00),('BMW 7 Series', 2023, 15000000.00),('BMW X1', 2023, 4500000.00),('BMW iX', 2023, 10500000.00),('BMW M2', 2023, 8500000.00),('BMW 2 Series', 2023, 4500000.00),('BMW 8 Series', 2023, 12500000.00),('BMW iX3', 2023, 8500000.00),('BMW X3', 2023, 7000000.00),('BMW M5', 2023, 11000000.00),('BMW X4', 2023, 8000000.00),('BMW 4 Series', 2023, 7500000.00),('BMW 6 Series', 2023, 9500000.00),('BMW M8', 2023, 13000000.00),('BMW 1 Series', 2023, 3500000.00),('BMW i3', 2023, 4500000.00),('BMW 320d', 2023, 5300000.00),('BMW 520d', 2023, 7000000.00),('BMW M5 Competition', 2023, 14000000.00),('BMW 330i', 2023, 6000000.00),('BMW 730Ld', 2023, 13500000.00),('BMW X8', 2023, 14000000.00);\par
+create table ferrari(name varchar(200),model_year int,price decimal(10,2),engine_type varchar(100));\par
+insert into ferrari(name,model_year,price,engine_type) values('Ferrari 488 GTB', 2023, 36000000.00, 'V8'),('Ferrari Portofino', 2023, 38000000.00, 'V8'),('Ferrari F8 Tributo', 2023, 42000000.00, 'V8'),('Ferrari Roma', 2023, 39000000.00, 'V8'),('Ferrari 812 Superfast', 2023, 45000000.00, 'V12'),('Ferrari GTC4Lusso', 2023, 50000000.00, 'V12'),('Ferrari LaFerrari', 2023, 10000000.00, 'V12 Hybrid'),('Ferrari 296 GTB', 2023, 60000000.00, 'V6 Hybrid'),('Ferrari Monza SP1', 2023, 80000000.00, 'V12'),('Ferrari Monza SP2', 2023, 82000000.00, 'V12'),('Ferrari SF90 Stradale', 2023, 75000000.00, 'V8 Hybrid'),('Ferrari 488 Spider', 2023, 40000000.00, 'V8'),('Ferrari California T', 2023, 35000000.00, 'V8 Turbo'),('Ferrari 812 GTS', 2023, 50000000.00, 'V12'),('Ferrari F12 Berlinetta', 2023, 42000000.00, 'V12'),('Ferrari F60 America', 2023, 11000000.00, 'V12'),('Ferrari 430 Scuderia', 2023, 32000000.00, 'V8'),('Ferrari 458 Italia', 2023, 35000000.00, 'V8'),('Ferrari 360 Modena', 2023, 28000000.00, 'V8'),('Ferrari 355 GTS', 2023, 26000000.00, 'V8'),('Ferrari 512 TR', 2023, 40000000.00, 'V12'),('Ferrari 308 GTS', 2023, 20000000.00, 'V8'),('Ferrari Enzo', 2023, 13000000.00, 'V12'),('Ferrari 275 GTB', 2023, 80000000.00, 'V12'),('Ferrari 250 GTO', 2023, 10000000.00, 'V12'),('Ferrari 456 GT', 2023, 25000000.00, 'V12'),('Ferrari Dino 246 GT', 2023, 50000000.00, 'V6'),('Ferrari 400i', 2023, 30000000.00, 'V12'),('Ferrari 208 GTB', 2023, 22000000.00, 'V8'),('Ferrari 488 Pista', 2023, 45000000.00, 'V8');\par
+ create table porsche(name varchar(300),price decimal(15,3),engine_type varchar(300));\par
+insert into porsche(name,price,engine_type)values ('Porsche 911 Carrera', 14000000.00, 'Flat-6'),('Porsche 911 Turbo', 22000000.00, 'Flat-6'),('Porsche 911 GT3', 25000000.00, 'Flat-6'),('Porsche 718 Cayman', 7000000.00, 'Flat-4'),('Porsche 718 Boxster', 7500000.00, 'Flat-4'),('Porsche Panamera', 13000000.00, 'V6'),('Porsche Cayenne', 10000000.00, 'V6'),('Porsche Cayenne Turbo', 15000000.00, 'V8'),('Porsche Macan', 7500000.00, 'Inline-4'),('Porsche Macan Turbo', 11000000.00, 'V6'),('Porsche Taycan', 15000000.00, 'Electric'),('Porsche Taycan Turbo S', 21000000.00, 'Electric'),('Porsche 918 Spyder', 30000000.00, 'V8 Hybrid'),('Porsche 911 GT2 RS', 35000000.00, 'Flat-6'),('Porsche 911 Carrera 4S', 18000000.00, 'Flat-6'),('Porsche 911 Turbo S', 26000000.00, 'Flat-6'),('Porsche 911 Targa 4', 20000000.00, 'Flat-6'),('Porsche 911 GT3 RS', 30000000.00, 'Flat-6'),('Porsche 911 R', 28000000.00, 'Flat-6'),('Porsche 911 Speedster', 32000000.00, 'Flat-6'),('Porsche 718 Spyder', 9000000.00, 'Flat-6'),('Porsche 718 Cayman GTS', 9500000.00, 'Flat-4'),('Porsche Panamera 4S', 15000000.00, 'V6'),('Porsche Panamera Turbo', 18000000.00, 'V8'),('Porsche Panamera Turbo S', 21000000.00, 'V8'),('Porsche Cayenne E-Hybrid', 11000000.00, 'V6 Hybrid'),('Porsche Taycan 4S', 17500000.00, 'Electric'),('Porsche Macan S', 8500000.00, 'V6'),('Porsche Boxster GTS', 9500000.00, 'Flat-4'),('Porsche Taycan Cross Turismo', 18000000.00, 'Electric');\par
+create table mercedes(name varchar(300),price decimal(15,3),engine_type varchar(200));\par
+ insert into mercedes(name,price,engine_type) value ('Mercedes-Benz A-Class', 4000000.00, 'Inline-4'),('Mercedes-Benz B-Class', 4500000.00, 'Inline-4'),('Mercedes-Benz C-Class', 5600000.00, 'Inline-4'),('Mercedes-Benz E-Class', 7300000.00, 'Inline-4'),('Mercedes-Benz S-Class', 12000000.00, 'V6'),('Mercedes-Benz GLA', 5700000.00, 'Inline-4'),('Mercedes-Benz GLC', 8500000.00, 'Inline-4'),('Mercedes-Benz GLE', 9500000.00, 'Inline-4'),('Mercedes-Benz GLS', 11500000.00, 'V6'),('Mercedes-Benz A-Class Limousine', 5500000.00, 'Inline-4'),('Mercedes-Benz EQC', 10500000.00, 'Electric'),('Mercedes-Benz S-Class Coupe', 17000000.00, 'V8'),('Mercedes-Benz S-Class Cabriolet', 18000000.00, 'V8'),('Mercedes-Benz CLS-Class', 9500000.00, 'Inline-4'),('Mercedes-Benz G-Class', 20000000.00, 'V8'),('Mercedes-Benz AMG GT', 25000000.00, 'V8'),('Mercedes-Benz GLE Coupe', 10500000.00, 'V6'),('Mercedes-Benz V-Class', 9000000.00, 'Inline-4'),('Mercedes-Benz A-Class Sedan', 5000000.00, 'Inline-4'),('Mercedes-Benz C-Class Cabriolet', 7200000.00, 'Inline-4'),('Mercedes-Benz C-Class Coupe', 7500000.00, 'Inline-4'),('Mercedes-Benz E-Class Coupe', 9500000.00, 'Inline-4'),('Mercedes-Benz E-Class Cabriolet', 10500000.00, 'Inline-4'),('Mercedes-Benz EQS', 18000000.00, 'Electric'),('Mercedes-Benz S-Class Maybach', 35000000.00, 'V12'),('Mercedes-Benz Maybach GLS', 32000000.00, 'V8'),('Mercedes-Benz GLA 35 AMG', 7500000.00, 'Inline-4'),('Mercedes-Benz GLC 43 AMG', 9500000.00, 'V6'),('Mercedes-Benz GLE 53 AMG', 12000000.00, 'Inline-6'),('Mercedes-Benz GLA 45 AMG', 8500000.00, 'Inline-4 Turbo');\par
+\par
+id - Unique identifier.\par
+Apply Where, AND,OR,NOT,orderby:\par
+WHERE:\par
+select(name) from t1 where age - 30;\par
+AND:select*from t1 WHERE age > 25 AND city = 'CityA';\par
+OR:select*from t1 WHERE age > 25 OR city = 'CityA';\par
+NOT: select*from t1 WHERE NOT city = 'CityA';\par
+ORDER BY:\par
+ORDER BY SELECT * FROM t1\par
+ORDER BY city ASC,Id DESC;\par
+Update:\par
+UPDATE t1 \par
+SET CityL='City8'\par
+WHERE id = 1336;\par
+ALTER-ADD and delete new column to already existing table:\par
+ALTER TABLE t1\par
+ADD Age Int(100);\par
+DELETE:DELETE FROM t1 WHERE condition;\par
+Limit:SELECT *FROM t1WHERE age>25LIMIT 5; \par
+SELECT\par
+    MIN(Age) AS MinAge,\par
+    MAX(Age) AS MaxAge,\par
+    SUM(Age) AS TotalAge,\par
+    COUNT(Age) AS CountAge,\par
+    AVG(Age) AS AvgAge\par
+FROM t1;\par
+\ul\b\fs32 conclusion:\ulnone\b0\fs24 in today's session i gained valueable information on MySQL commonds are DDL,DML.\fs22\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
