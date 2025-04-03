@@ -1,0 +1,316 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\b\f0\fs44\lang9 Maven\par
+
+\pard\sa200\sl276\slmult1\ulnone\b0\fs24 Apache Maven:\par
+introduced by apache company\par
+build automation tool.\par
+open source(free of cost).\par
+used for project management -Project management tool.\par
+Maven is an open source build automation and project management tool primarily used in java-based projects.\par
+Test cases: are written by manual testers in manual testing.\par
+Test Scripts: are written by automation testers in automation testing.\par
+How does maven works?\par
+It manages dependencies by downloading libraries and jar files which are required for the project and their dependencies.\par
+maven adopts conversion over configuration.\par
+DEF:\par
+What is a build tool in devops?\par
+It is a software program that automates the process of transforming the source code into deployable and executable format.\par
+Maven was developed by Apache company.\par
+Maven is used for only java based projects/applicartion.\par
+As a build automation tool, it automates the source code compilation and dependency management,assemeble binary codes into packages and executes the pacakages as test scripts.\par
+Deployable and executive formats: war/jar/ear files\par
+Maven in devops should be utilized in 3 basic scenarios:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 If the initiative has significant number of dependencies.\par
+{\pntext\f0 2.\tab}If the dependencies versions needs to be upgraded frequently.\par
+{\pntext\f0 3.\tab}If the tasks involves rapid documentation,compilation,building of source code as war/jar/ear files.\par
+
+\pard\sa200\sl276\slmult1 war-web  applications.\par
+jar-java applicaton.\par
+ear-enterprise application.\par
+Limitations of Maven:\par
+1.builds only java based applications.\par
+Build  tools:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Java -Maven ,ANT,Gradle\par
+{\pntext\f0 2.\tab}Python -pybuilder.\par
+{\pntext\f0 3.\tab}.Net- MS build (mircosoft build engine)\par
+{\pntext\f0 4.\tab}node js -Gulp,Grunt and webpack.\par
+
+\pard\sa200\sl276\slmult1 How does maven works?\par
+pom.xml---->build----->war/jar/ear------>packages(deployable format)---->copy tomcat(web server).\par
+Work flow /process of Maven:\par
+Developers---->code---->push---->GitHub(Remote repository)---->Build(Maven)---->packages---->ear/jar/war---->copy the package on to the web server(Tomcat)---->EU(access the application).\par
+1.Maven works for POM.xml/POM.xml2.(project object model).\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 POM.xml used to manage the (java)application.\par
+{\pntext\f1\'B7\tab}developers will write the POM.xml.\par
+{\pntext\f1\'B7\tab}POM.xml--->super POM/parent POM.\par
+{\pntext\f1\'B7\tab}it contains all the dependency libraries.\par
+{\pntext\f1\'B7\tab}POM.xml should be unqiue.\par
+{\pntext\f1\'B7\tab}each project contains one POM.xml files.\par
+
+\pard\sa200\sl276\slmult1 2.Plugins:installing the dependencies(external features)is known as plug-ins.\par
+---->dependencies----external features adding to our project.\par
+---->2types of pulgins:1.inbuilt plugins(one time) 2.Added plugins .\par
+3.added plugins are reusable.\par
+4.has life cycle.\par
+Apache ANT:\par
+older version of maven.\par
+developed by Apache company.\par
+alternative tool for maven.\par
+has no life cycle.\par
+build.xml----->developers\par
+junit(java unit) test cases not there in ANT.\par
+scripts are not reusable.\par
+Ant :ant can build anykind of projects.\par
+Maven VS ANT \par
+\tab Maven \tab\tab\tab\tab\tab\tab ANT\par
+1.Latest version of build automation tool.\tab\tab 1.older version.\par
+2.Maven works for pom.xml file\tab\tab\tab 2.build.xml.\par
+pom.xml2 are same.\par
+POM:Project object Model-used to manage the \par
+dependencies.\par
+3.Maven has life cycle.\tab\tab\tab\tab 3. Has no life cycle.\par
+4.junit test cases will be there. \tab\tab\tab 4.junit test cases are not there.\par
+5.junit test cases are reusable. \tab\tab\tab 5.ANT scripts are not reusable.\par
+6.add plugins and they are reusable.\tab\tab\tab 6.no plugins.\par
+plugins:Installing the dependencies is known as "plugins".\par
+external feature added to our project externally.\par
+plugins are resuable.\par
+pom.xml:\par
+1.unique file.\par
+2.written by developers.\par
+3.pom.xml -- source code.\par
+4.pom.xml --superpom/parent pom.\par
+3 Maven repositories:\par
+1.central repository:online repository\par
+2.Remote repository:organization repository-IBM(real-time).\par
+3.Local repository:own laptops/systems.\par
+Fields present in pom.xml file:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 group id:client name (or) project;Eg:Axis,ICICI,SBI.\par
+{\pntext\f0 2.\tab}artifact id : feature name; Eg:personal loans,gold loans,credit cards,debit cards,internet banking.\par
+{\pntext\f0 3.\tab}3.version id :Eg:8.2.0\par
+
+\pard\sa200\sl276\slmult1\b consists of 3fields\par
+\b0 major releaseMaven life cycle:if 8changes to 9-->project got released.\par
+minor release:if 2 changes to 3-->new feature is added.\par
+hot fix/bug fix release:developers are still developing the code.\par
+steps:7\par
+1.validate:pom.xml -- download dependencies.\par
+2.compile:compile the entire source code.\par
+3.test:runs the junit test cases.\par
+4.package:creates a software package -- war/jar/ear files\par
+5.verification:verifies integration test cases if configured\par
+6.installation:copy the package to the local repository.\par
+7.deploy:upload the package to the remote repository.\par
+stages:3\par
+1.Default:\par
+1.compile:compile the entire source code.\par
+2.Validate:Validates the compiled code.\par
+3.Test: tests the source code.\par
+4.package:generates the packages  for source code.\par
+5.install:install all the packages generated by package.\par
+6.verify:it will verify the generated paackage.\par
+2.Clean:performed before compilation:\par
+pre-clean: check for jar/war/ear.\par
+clean: delete the older ear/jar/war files.\par
+post-clean:the new generated war/ear/jar files will be saved.\par
+3.Site:its like folder where we will deploy our applications:\par
+pre-site:it receives the post clean files.\par
+ site: it receives the pre site files.\par
+ post-site:it receives the files from site.\par
+site-deploy:to where (address of the server) we need to copy the files.\par
+\b releases: It is a final version of that build which will not change.\par
+looks like-8.2.0--->only numerical values are present.\par
+releases maintain versions.\par
+Snapshots:It is under development version build compile/artifacts can change.\par
+looks like-8.2.0-SNAPSHOT\par
+doesnot maintain any versions.\par
+\b0 maven installation steps:\par
+1.take 1 EC2 instance and login.\par
+2.connect to Linux environment.\par
+3.Install java.\par
+4.Install git .\par
+5.Install maven.\par
+6.mvn clean package -- build.\par
+Maven commands will always starts with 'mvn'\par
+mvn clean \par
+mvn compile\par
+mvn clear\par
+mvn site\par
+mvn run\par
+mvn test \par
+mvn validate.\par
+uses of maven:\par
+1.It makes project to build easily\par
+2.Easy to add new dependencies.\par
+\b\fs32 Plugins\par
+\b0\fs24 A plugin is an add-on that enhances or extends the functionality of an existing application.\par
+Plugins allow customization, provide new features, and make applications more flexible without modifying their core structure.\par
+Maven Plugins: In Maven, plugins are used to perform various tasks in the build process, such as compiling code, running tests, generating documentation, packaging applications, and deploying them. Maven plugins are pre-configured tasks that you can add to your build lifecycle. For example, the maven-compiler-plugin compiles your Java code, and the maven-surefire-plugin runs your unit tests.\par
+\b\fs32 Test Case:\par
+\b0\fs24 A test case is a single unit of testing that checks a specific functionality or feature of an application. It typically consists of:\par
+Input: The conditions or data that will be used in the test.\par
+Expected Result: The anticipated outcome of the test.\par
+Actual Result: The actual outcome after executing the test.\par
+Test Steps: The sequence of actions to perform during the test.\par
+Example: A test case might check whether a user can log in successfully with a valid username and password.\par
+\b\fs32 Test Script:\par
+\b0\fs24 A test script is a set of automated instructions written to execute a test case or a series of test cases. It can be written in various scripting languages or testing frameworks (e.g., Selenium, JUnit, or Python) and is used to automate the testing process.\par
+Test scripts are typically more detailed, as they include not only the test logic but also the setup and teardown procedures, environment configuration, and other necessary actions to execute the tests automatically.\par
+Example: A test script could automate the login test case by launching a web browser, inputting credentials, and verifying the result without manual intervention.\par
+Test Case: Describes a single test (manual or automated) with a specific objective.\par
+Test Script: A piece of code or an automated script that runs one or more test cases.\par
+\ul\b\fs32 conclusion:\ulnone\b0\fs24 in today's session i gained valueable information on Maven ..\par
+\par
+sudo wget {{\field{\*\fldinst{HYPERLINK http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo }}{\fldrslt{http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo\ul0\cf0}}}}\f0\fs24  -O /etc/yum.repos.d/epel-apache-maven.repo\par
+sudo sed -i s/\\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo\par
+sudo yum install -y apache-maven\par
+mvn clean package\par
+{{\field{\*\fldinst{HYPERLINK https://github.com/Soujanya4/myweb }}{\fldrslt{https://github.com/Soujanya4/myweb\ul0\cf0}}}}\f0\fs24\par
+\b\fs28 [ec2-user@ip-172-31-92-218 ~]$ java -version\par
+\b0\fs24 openjdk version "1.8.0_442"\par
+OpenJDK Runtime Environment Corretto-8.442.06.1 (build 1.8.0_442-b06)\par
+OpenJDK 64-Bit Server VM Corretto-8.442.06.1 (build 25.442-b06, mixed mode)\par
+\b\fs28 [ec2-user@ip-172-31-92-218 ~]$ sudo yum install -y git\par
+\b0\fs24 Last metadata expiration check: 0:11:32 ago on Tue Apr  1 13:24:41 2025.\par
+Dependencies resolved.\par
+========================================================================================================================\par
+ Package                       Architecture        Version                               Repository                Size\par
+========================================================================================================================\par
+Installing:\par
+ git                           x86_64              2.47.1-1.amzn2023.0.2                 amazonlinux               54 k\par
+Installing dependencies:\par
+ git-core                      x86_64              2.47.1-1.amzn2023.0.2                 amazonlinux              4.7 M\par
+ git-core-doc                  noarch              2.47.1-1.amzn2023.0.2                 amazonlinux              2.8 M\par
+ perl-Error                    noarch              1:0.17029-5.amzn2023.0.2              amazonlinux               41 k\par
+ perl-File-Find                noarch              1.37-477.amzn2023.0.6                 amazonlinux               26 k\par
+ perl-Git                      noarch              2.47.1-1.amzn2023.0.2                 amazonlinux               42 k\par
+ perl-TermReadKey              x86_64              2.38-9.amzn2023.0.2                   amazonlinux               36 k\par
+ perl-lib                      x86_64              0.65-477.amzn2023.0.6                 amazonlinux               15 k\par
+\par
+Transaction Summary\par
+========================================================================================================================\par
+Install  8 Packages\par
+\par
+Total download size: 7.7 M\par
+Installed size: 37 M\par
+Downloading Packages:\par
+(1/8): git-2.47.1-1.amzn2023.0.2.x86_64.rpm                                             1.2 MB/s |  54 kB     00:00\par
+(2/8): perl-Error-0.17029-5.amzn2023.0.2.noarch.rpm                                     1.7 MB/s |  41 kB     00:00\par
+(3/8): perl-File-Find-1.37-477.amzn2023.0.6.noarch.rpm                                  1.1 MB/s |  26 kB     00:00\par
+(4/8): git-core-doc-2.47.1-1.amzn2023.0.2.noarch.rpm                                     25 MB/s | 2.8 MB     00:00\par
+(5/8): perl-Git-2.47.1-1.amzn2023.0.2.noarch.rpm                                        1.7 MB/s |  42 kB     00:00\par
+(6/8): git-core-2.47.1-1.amzn2023.0.2.x86_64.rpm                                         32 MB/s | 4.7 MB     00:00\par
+(7/8): perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64.rpm                                  1.0 MB/s |  36 kB     00:00\par
+(8/8): perl-lib-0.65-477.amzn2023.0.6.x86_64.rpm                                        491 kB/s |  15 kB     00:00\par
+------------------------------------------------------------------------------------------------------------------------\par
+Total                                                                                    36 MB/s | 7.7 MB     00:00\par
+Running transaction check\par
+Transaction check succeeded.\par
+Running transaction test\par
+\par
+Transaction test succeeded.\par
+Running transaction\par
+  Preparing        :                                                                                                1/1\par
+  Installing       : git-core-2.47.1-1.amzn2023.0.2.x86_64                                                          1/8\par
+  Installing       : git-core-doc-2.47.1-1.amzn2023.0.2.noarch                                                      2/8\par
+  Installing       : perl-lib-0.65-477.amzn2023.0.6.x86_64                                                          3/8\par
+  Installing       : perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64                                                    4/8\par
+  Installing       : perl-File-Find-1.37-477.amzn2023.0.6.noarch                                                    5/8\par
+  Installing       : perl-Error-1:0.17029-5.amzn2023.0.2.noarch                                                     6/8\par
+  Installing       : perl-Git-2.47.1-1.amzn2023.0.2.noarch                                                          7/8\par
+  Installing       : git-2.47.1-1.amzn2023.0.2.x86_64                                                               8/8\par
+  Running scriptlet: git-2.47.1-1.amzn2023.0.2.x86_64                                                               8/8\par
+  Verifying        : git-2.47.1-1.amzn2023.0.2.x86_64                                                               1/8\par
+  Verifying        : git-core-2.47.1-1.amzn2023.0.2.x86_64                                                          2/8\par
+  Verifying        : git-core-doc-2.47.1-1.amzn2023.0.2.noarch                                                      3/8\par
+  Verifying        : perl-Error-1:0.17029-5.amzn2023.0.2.noarch                                                     4/8\par
+  Verifying        : perl-File-Find-1.37-477.amzn2023.0.6.noarch                                                    5/8\par
+  Verifying        : perl-Git-2.47.1-1.amzn2023.0.2.noarch                                                          6/8\par
+  Verifying        : perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64                                                    7/8\par
+  Verifying        : perl-lib-0.65-477.amzn2023.0.6.x86_64                                                          8/8\par
+\par
+Installed:\par
+  git-2.47.1-1.amzn2023.0.2.x86_64                            git-core-2.47.1-1.amzn2023.0.2.x86_64\par
+  git-core-doc-2.47.1-1.amzn2023.0.2.noarch                   perl-Error-1:0.17029-5.amzn2023.0.2.noarch\par
+  perl-File-Find-1.37-477.amzn2023.0.6.noarch                 perl-Git-2.47.1-1.amzn2023.0.2.noarch\par
+  perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64                 perl-lib-0.65-477.amzn2023.0.6.x86_64\par
+\par
+Complete!\par
+\b\fs28 [ec2-user@ip-172-31-92-218 ~]$ git --version\par
+\b0\fs24 git version 2.47.1\par
+\b\fs28 [ec2-user@ip-172-31-92-218 ~]$ git clone {{\field{\*\fldinst{HYPERLINK https://github.com/Soujanya4/myweb }}{\fldrslt{https://github.com/Soujanya4/myweb\ul0\cf0}}}}\f0\fs28\par
+\b0\fs24 Cloning into 'myweb'...\par
+remote: Enumerating objects: 10947, done.\par
+remote: Total 10947 (delta 0), reused 0 (delta 0), pack-reused 10947 (from 1)\par
+Receiving objects: 100% (10947/10947), 2.18 MiB | 26.63 MiB/s, done.\par
+Resolving deltas: 100% (5054/5054), done.\par
+\b\fs28 [ec2-user@ip-172-31-92-218 ~]$ sudo wget {{\field{\*\fldinst{HYPERLINK http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo }}{\fldrslt{http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo\ul0\cf0}}}}\f0\fs28  -O /etc/yum.repos.d/epel-apache-maven.repo\par
+\b0\fs24 --2025-04-01 13:38:02--  {{\field{\*\fldinst{HYPERLINK http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo }}{\fldrslt{http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo\ul0\cf0}}}}\f0\fs24\par
+Resolving repos.fedorapeople.org (repos.fedorapeople.org)... 152.19.134.196, 2600:2701:4000:5211:dead:beef:a7:9475\par
+Connecting to repos.fedorapeople.org (repos.fedorapeople.org)|152.19.134.196|:80... connected.\par
+HTTP request sent, awaiting response... 302 Found\par
+Location: {{\field{\*\fldinst{HYPERLINK https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo }}{\fldrslt{https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo\ul0\cf0}}}}\f0\fs24  [following]\par
+--2025-04-01 13:38:02--  {{\field{\*\fldinst{HYPERLINK https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo }}{\fldrslt{https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo\ul0\cf0}}}}\f0\fs24\par
+Connecting to repos.fedorapeople.org (repos.fedorapeople.org)|152.19.134.196|:443... connected.\par
+HTTP request sent, awaiting response... 200 OK\par
+Length: 445\par
+Saving to: \lquote /etc/yum.repos.d/epel-apache-maven.repo\rquote\par
+/etc/yum.repos.d/epel-apache- 100%[=================================================>]     445  --.-KB/s    in 0s\par
+2025-04-01 13:38:02 (12.2 MB/s) - \lquote /etc/yum.repos.d/epel-apache-maven.repo\rquote  saved [445/445]\par
+\b\fs28 [ec2-user@ip-172-31-92-218 ~]$ sudo sed -i s/\\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo\par
+[ec2-user@ip-172-31-92-218 ~]$ sudo yum install -y apache-maven\par
+ cd myweb\par
+[ec2-user@ip-172-31-92-218 myweb]$ ls\par
+\b0\fs24 123Dockerfile    Jenkins-sonar-nexus-tomcat  copy.yml          pom.xml          upload_docker_image_to_nexus\par
+Dockerfile       Jenkins-terraform           deployments.yml   setenv.sh        var.tf\par
+Jenkins-ansible  Jenkinsfile                 dev.in            sftp_tomcat.sh   vasu.xml\par
+Jenkins-appnew   Jenkinsfile007              docker-ci-cd      springBoot.yml   war-ci-cd-tomcat\par
+Jenkins-decdemo  Jenkinsfile2                dummy.sh          src\par
+Jenkins-decnew   appspec.yml                 kuberneeteswork   start_tomcat.sh\par
+Jenkins-docker   azure-pipelines.yml         kubernetes-ci-cd  stop_tomcat.sh\par
+Jenkins-kube     buildspec.yml               main.tf           target\par
+\b\fs28 [ec2-user@ip-172-31-92-218 myweb]$ mvn clean package\b0\fs24\par
+sudo update-alternatives --config java/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar (25 KB at 594.4 KB/sec)\par
+Downloaded: {{\field{\*\fldinst{HYPERLINK https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar }}{\fldrslt{https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar\ul0\cf0}}}}\f0\fs24  (181 KB at 4002.6 KB/sec)\par
+Downloaded: {{\field{\*\fldinst{HYPERLINK https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar }}{\fldrslt{https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar\ul0\cf0}}}}\f0\fs24  (33 KB at 648.0 KB/sec)\par
+Downloaded: {{\field{\*\fldinst{HYPERLINK https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar }}{\fldrslt{https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar\ul0\cf0}}}}\f0\fs24  (422 KB at 5851.3 KB/sec)\par
+[INFO] Packaging webapp\par
+[INFO] Assembling webapp [myweb] in [/home/ec2-user/myweb/target/myweb-8.2.0]\par
+[INFO] Processing war project\par
+[INFO] Copying webapp resources [/home/ec2-user/myweb/src/main/webapp]\par
+[INFO] Webapp assembled in [35 msecs]\par
+[INFO] Building war: /home/ec2-user/myweb/target/myweb-8.2.0.war\par
+[INFO] WEB-INF/web.xml already added, skipping\par
+[INFO] ------------------------------------------------------------------------\par
+[INFO] BUILD SUCCESS\par
+[INFO] ------------------------------------------------------------------------\par
+[INFO] Total time: 8.464 s\par
+[INFO] Finished at: 2025-04-01T13:42:16+00:00\par
+[INFO] Final Memory: 18M/43M\par
+[INFO] ------------------------------------------------------------------------\par
+[ec2-user@ip-172-31-92-218 myweb]$\par
+\b\fs28 [ec2-user@ip-172-31-92-218 myweb]$ mvn --version\par
+\b0\fs24 Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)\par
+Maven home: /usr/share/apache-maven\par
+Java version: 1.8.0_442, vendor: Amazon.com Inc.\par
+Java home: /usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre\par
+Default locale: en, platform encoding: UTF-8\par
+OS name: "linux", version: "6.1.130-139.222.amzn2023.x86_64", arch: "amd64", family: "unix"\par
+sudo yum remove java-1.8.0-amazon-corretto\par
+\par
+\par
+\par
+}
+ 
